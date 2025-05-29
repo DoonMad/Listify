@@ -1,50 +1,111 @@
-# Welcome to your Expo app 👋
+# Listify
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Listify is a simple yet functional multi-list organizer built using **React Native** and **Expo**. It allows users to create multiple lists (e.g., groceries, work, to-dos) and manage tasks within them. This was my first full-fledged app project where I focused on learning core concepts of mobile app development, state management, navigation, and data persistence.
 
-## Get started
+---
 
-1. Install dependencies
+## Features
 
-   ```bash
-   npm install
-   ```
+* Create and manage multiple custom lists
+* Add, complete, and delete tasks in each list
+* Long press on list cards to delete them
+* Data persists locally using AsyncStorage
+* Neat and minimal UI with Tailwind-like utility classes
+* Simple modal interface for adding new lists
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Tech Stack & Libraries
 
-In the output, you'll find options to open the app in a
+* **React Native** (with Expo)
+* **TypeScript**
+* **AsyncStorage** (for local persistence)
+* **Expo Router** (for screen navigation)
+* **Tailwind CSS classes** via `nativewind`
+* **Icons** via `@expo/vector-icons` (Ionicons)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Screenshots
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+<!-- ![Home Screen](screenshots/home.png)
+![List View](screenshots/list.png) -->
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## How to Run Locally
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Clone the repository:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+git clone https://github.com/your-username/Listify.git
+```
 
-## Join the community
+2. Navigate to the project folder:
 
-Join our community of developers creating universal apps.
+```bash
+cd Listify
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npx expo start
+```
+
+5. Scan the QR code with Expo Go app or run it on an emulator.
+
+---
+
+## How to Build the App
+
+To build an installable version (APK, AAB, etc.):
+
+1. Run the following command:
+
+```bash
+npx expo export --dev-client
+```
+
+2. Or for EAS builds:
+
+```bash
+eas build -p android
+```
+
+> Make sure to configure EAS and link your Expo account. See [Expo Build Docs](https://docs.expo.dev/build/introduction/).
+
+---
+
+## Learning & Credits
+
+This app helped me learn:
+
+* React Native fundamentals
+* State and props handling
+* AsyncStorage and persistence
+* Modular component structure
+* Navigation between screens
+* FlatList optimization
+
+---
+
+## Future Improvements
+
+* [ ] Improve UI with better design and color scheme
+* [ ] Add feature to rename lists
+* [ ] Fix issue: Task count not updating accurately
+* [ ] Add due dates, reminders, and priorities for tasks
+* [ ] Option to reorder tasks within a list
+
+Feel free to open issues or contribute to make this app better.
+
+---
