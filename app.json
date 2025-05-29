@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "ToDo-List",
-    "slug": "ToDo-List",
+    "name": "Listify",
+    "slug": "Listify",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "todolist",
+    "scheme": "listify",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
