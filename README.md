@@ -28,11 +28,13 @@ Listify is a simple yet functional multi-list organizer built using **React Nati
 
 ## Screenshots
 
-```
-![Home Screen](screenshots/index.jpg)
-![Ongoing Tasks](screenshots/ongoing.jpg)
-![Completed Tasks](screenshots/completed.jpg)
-```
+
+<p align="center">
+  <img src="./screenshots/index.jpg" alt="Home Screen" width="30%" />
+  <img src="./screenshots/ongoing.jpg" alt="Ongoing Tasks" width="30%" />
+  <img src="screenshots/completed.jpg" alt="Completed Tasks" width="30%" />
+</p>
+
 
 ---
 
